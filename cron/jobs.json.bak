@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "e6eb49f1-136d-453d-bfc3-4490cde9aed3",
+      "agentId": "main",
+      "name": "daily builderz instructions",
+      "enabled": true,
+      "createdAtMs": 1771918150655,
+      "updatedAtMs": 1772436475231,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * *",
+        "tz": "Asia/Karachi"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "Reminder: review the Builderz instructions (memory/2026-02-24.md) and the Supabase KB skill before answering any Builderz questions today. Use the Supabase knowledge_base REST API as described in skills/supabase-kb/SKILL.md to find answers."
+      },
+      "state": {
+        "nextRunAtMs": 1772510400000,
+        "lastError": "empty-heartbeat-file",
+        "lastRunAtMs": 1772436475233,
+        "lastStatus": "skipped",
+        "lastDurationMs": 9
+      }
+    },
+    {
+      "id": "5ef2fb8a-7e82-4570-aac7-66bf7d321ddd",
+      "agentId": "main",
+      "name": "Daily Builderz cache refresh",
+      "enabled": true,
+      "createdAtMs": 1772096875617,
+      "updatedAtMs": 1772436475231,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * *",
+        "tz": "Asia/Karachi"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Refresh Builderz hybrid cache in the workspace by running `node refresh_builderz_cache.mjs` from `C:\\Users\\Ali Haider\\.openclaw\\workspace`. Then report success/failure with row counts from `cache/builderz-kb-cache.json` meta."
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1772510400000,
+        "lastError": "cron delivery target is missing",
+        "lastRunAtMs": 1772436475291,
+        "lastStatus": "error",
+        "lastDurationMs": 30214
+      }
+    }
+  ]
+}

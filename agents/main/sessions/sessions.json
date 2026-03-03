@@ -1,0 +1,2324 @@
+{
+  "agent:main:main": {
+    "sessionId": "0f75ddaf-b01f-4bf1-96ab-ed9c05b2313e",
+    "updatedAt": 1772436510310,
+    "systemSent": true,
+    "abortedLastRun": false,
+    "chatType": "direct",
+    "deliveryContext": {
+      "channel": "webchat"
+    },
+    "lastChannel": "webchat",
+    "origin": {
+      "provider": "webchat",
+      "surface": "webchat",
+      "chatType": "direct"
+    },
+    "sessionFile": "C:\\Users\\Ali Haider\\.openclaw\\agents\\main\\sessions\\0f75ddaf-b01f-4bf1-96ab-ed9c05b2313e.jsonl",
+    "compactionCount": 0,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "authProfileOverride": "openai-codex:default",
+    "authProfileOverrideSource": "auto",
+    "authProfileOverrideCompactionCount": 0,
+    "inputTokens": 365,
+    "outputTokens": 80,
+    "totalTokens": 9965,
+    "modelProvider": "openai-codex",
+    "model": "gpt-5.3-codex",
+    "contextTokens": 272000,
+    "systemPromptReport": {
+      "source": "run",
+      "generatedAt": 1772436507827,
+      "sessionId": "0f75ddaf-b01f-4bf1-96ab-ed9c05b2313e",
+      "sessionKey": "agent:main:main",
+      "provider": "openai-codex",
+      "model": "gpt-5.3-codex",
+      "workspaceDir": "C:\\Users\\Ali Haider\\.openclaw\\workspace",
+      "bootstrapMaxChars": 20000,
+      "sandbox": {
+        "mode": "off",
+        "sandboxed": false
+      },
+      "systemPrompt": {
+        "chars": 23834,
+        "projectContextChars": 14373,
+        "nonProjectContextChars": 9461
+      },
+      "injectedWorkspaceFiles": [
+        {
+          "name": "AGENTS.md",
+          "path": "C:\\Users\\Ali Haider\\.openclaw\\workspace\\AGENTS.md",
+          "missing": false,
+          "rawChars": 7804,
+          "injectedChars": 7804,
+          "truncated": false
+        },
+        {
+          "name": "SOUL.md",
+          "path": "C:\\Users\\Ali Haider\\.openclaw\\workspace\\SOUL.md",
+          "missing": false,
+          "rawChars": 1664,
+          "injectedChars": 1664,
+          "truncated": false
+        },
+        {
+          "name": "TOOLS.md",
+          "path": "C:\\Users\\Ali Haider\\.openclaw\\workspace\\TOOLS.md",
+          "missing": false,
+          "rawChars": 850,
+          "injectedChars": 850,
+          "truncated": false
+        },
+        {
+          "name": "IDENTITY.md",
+          "path": "C:\\Users\\Ali Haider\\.openclaw\\workspace\\IDENTITY.md",
+          "missing": false,
+          "rawChars": 633,
+          "injectedChars": 633,
+          "truncated": false
+        },
+        {
+          "name": "USER.md",
+          "path": "C:\\Users\\Ali Haider\\.openclaw\\workspace\\USER.md",
+          "missing": false,
+          "rawChars": 1482,
+          "injectedChars": 1482,
+          "truncated": false
+        },
+        {
+          "name": "HEARTBEAT.md",
+          "path": "C:\\Users\\Ali Haider\\.openclaw\\workspace\\HEARTBEAT.md",
+          "missing": false,
+          "rawChars": 167,
+          "injectedChars": 167,
+          "truncated": false
+        },
+        {
+          "name": "BOOTSTRAP.md",
+          "path": "C:\\Users\\Ali Haider\\.openclaw\\workspace\\BOOTSTRAP.md",
+          "missing": false,
+          "rawChars": 1449,
+          "injectedChars": 1449,
+          "truncated": false
+        }
+      ],
+      "skills": {
+        "promptChars": 1201,
+        "entries": [
+          {
+            "name": "healthcheck",
+            "blockChars": 512
+          },
+          {
+            "name": "skill-creator",
+            "blockChars": 317
+          }
+        ]
+      },
+      "tools": {
+        "listChars": 1926,
+        "schemaChars": 14674,
+        "entries": [
+          {
+            "name": "read",
+            "summaryChars": 298,
+            "schemaChars": 392,
+            "propertiesCount": 4
+          },
+          {
+            "name": "edit",
+            "summaryChars": 129,
+            "schemaChars": 591,
+            "propertiesCount": 6
+          },
+          {
+            "name": "write",
+            "summaryChars": 127,
+            "schemaChars": 313,
+            "propertiesCount": 3
+          },
+          {
+            "name": "exec",
+            "summaryChars": 181,
+            "schemaChars": 1037,
+            "propertiesCount": 12
+          },
+          {
+            "name": "process",
+            "summaryChars": 85,
+            "schemaChars": 844,
+            "propertiesCount": 11
+          },
+          {
+            "name": "browser",
+            "summaryChars": 1251,
+            "schemaChars": 1869,
+            "propertiesCount": 28
+          },
+          {
+            "name": "canvas",
+            "summaryChars": 106,
+            "schemaChars": 661,
+            "propertiesCount": 18
+          },
+          {
+            "name": "nodes",
+            "summaryChars": 101,
+            "schemaChars": 1479,
+            "propertiesCount": 33
+          },
+          {
+            "name": "cron",
+            "summaryChars": 2444,
+            "schemaChars": 581,
+            "propertiesCount": 13
+          },
+          {
+            "name": "message",
+            "summaryChars": 89,
+            "schemaChars": 3897,
+            "propertiesCount": 84
+          },
+          {
+            "name": "tts",
+            "summaryChars": 129,
+            "schemaChars": 223,
+            "propertiesCount": 2
+          },
+          {
+            "name": "gateway",
+            "summaryChars": 225,
+            "schemaChars": 465,
+            "propertiesCount": 11
+          },
+          {
+            "name": "agents_list",
+            "summaryChars": 72,
+            "schemaChars": 33,
+            "propertiesCount": 0
+          },
+          {
+            "name": "sessions_list",
+            "summaryChars": 54,
+            "schemaChars": 176,
+            "propertiesCount": 4
+          },
+          {
+            "name": "sessions_history",
+            "summaryChars": 36,
+            "schemaChars": 149,
+            "propertiesCount": 3
+          },
+          {
+            "name": "sessions_send",
+            "summaryChars": 84,
+            "schemaChars": 203,
+            "propertiesCount": 5
+          },
+          {
+            "name": "sessions_spawn",
+            "summaryChars": 107,
+            "schemaChars": 312,
+            "propertiesCount": 8
+          },
+          {
+            "name": "session_status",
+            "summaryChars": 207,
+            "schemaChars": 89,
+            "propertiesCount": 2
+          },
+          {
+            "name": "web_search",
+            "summaryChars": 175,
+            "schemaChars": 733,
+            "propertiesCount": 6
+          },
+          {
+            "name": "web_fetch",
+            "summaryChars": 129,
+            "schemaChars": 360,
+            "propertiesCount": 3
+          },
+          {
+            "name": "memory_search",
+            "summaryChars": 235,
+            "schemaChars": 139,
+            "propertiesCount": 3
+          },
+          {
+            "name": "memory_get",
+            "summaryChars": 151,
+            "schemaChars": 128,
+            "propertiesCount": 3
+          }
+        ]
+      }
+    }
+  },
+  "agent:main:openai:4f1b39cc-1cac-4c04-b555-c0018af05869": {
+    "sessionId": "9daa07da-4a43-477a-8ff5-132ef9496cdc",
+    "updatedAt": 1772019582712,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "google",
+    "model": "gemini-2.5-flash",
+    "contextTokens": 1048576,
+    "abortedLastRun": false,
+    "inputTokens": 14078,
+    "outputTokens": 114,
+    "totalTokens": 14078
+  },
+  "agent:main:openai:fe132cd6-71a5-4f70-8d86-0db3b47bceac": {
+    "sessionId": "5a598f0c-3edf-4f0f-ab81-cc4e30d666b8",
+    "updatedAt": 1772019823321,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "google",
+    "model": "gemini-2.5-flash",
+    "contextTokens": 1048576,
+    "abortedLastRun": false,
+    "inputTokens": 13429,
+    "outputTokens": 270,
+    "totalTokens": 13429
+  },
+  "agent:main:openai:a088f071-951b-4404-88bc-8ff21c13ab9a": {
+    "sessionId": "c8fb7605-29f5-4b6f-a2d4-e1621b654948",
+    "updatedAt": 1772019955318,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "google",
+    "model": "gemini-2.5-flash",
+    "contextTokens": 1048576,
+    "abortedLastRun": false,
+    "inputTokens": 14174,
+    "outputTokens": 52,
+    "totalTokens": 14174
+  },
+  "agent:main:openai:80358a80-534e-46a6-a83f-be7bd23ee023": {
+    "sessionId": "499d8ae2-527c-4ffc-b81d-6e0df5babd64",
+    "updatedAt": 1772020018232,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "google",
+    "model": "gemini-2.5-flash",
+    "contextTokens": 1048576,
+    "abortedLastRun": false,
+    "inputTokens": 13429,
+    "outputTokens": 191,
+    "totalTokens": 13429
+  },
+  "agent:main:openai:94c62599-2ba2-42d1-ac69-411ed72bd7b5": {
+    "sessionId": "b6c72e4a-7fc9-4efa-a6b5-69e6000794a8",
+    "updatedAt": 1772020120921,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "google",
+    "model": "gemini-2.5-flash",
+    "contextTokens": 1048576,
+    "abortedLastRun": false
+  },
+  "agent:main:openai:071fac7e-3ca5-4c96-911e-a3b8555b7e73": {
+    "sessionId": "57bd5668-3486-439d-bf6f-519847f353f1",
+    "updatedAt": 1772020127720,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "google",
+    "model": "gemini-2.5-flash",
+    "contextTokens": 1048576,
+    "abortedLastRun": false
+  },
+  "agent:main:openai:59ffb026-4c3e-4c01-91a0-b4c896d02fc1": {
+    "sessionId": "bb80ec4f-1c29-42d1-9a37-7e8c61ce726e",
+    "updatedAt": 1772020230991,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "google",
+    "model": "gemini-2.5-flash",
+    "contextTokens": 1048576,
+    "abortedLastRun": false
+  },
+  "agent:main:openai:76851263-b974-4bd3-ad79-974b0dfb0380": {
+    "sessionId": "3b43375a-6d5f-47c8-886f-9ca51fd18f3b",
+    "updatedAt": 1772020254226,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "google",
+    "model": "gemini-2.5-flash",
+    "contextTokens": 1048576,
+    "abortedLastRun": false
+  },
+  "agent:main:openai:9d262c9d-effe-4a04-bb75-3b0b7b8e1d69": {
+    "sessionId": "3204b10c-47eb-4040-98d4-13ca21e5647f",
+    "updatedAt": 1772087745427,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "google",
+    "model": "gemini-2.5-flash",
+    "contextTokens": 1048576,
+    "abortedLastRun": false
+  },
+  "agent:main:openai:1c54cd60-43e1-4f94-8c75-4a05a21161da": {
+    "sessionId": "0a77b704-d862-44d3-a0df-f292e895a209",
+    "updatedAt": 1772087887601,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "openai-codex",
+    "model": "gpt-5.3-codex",
+    "contextTokens": 272000,
+    "abortedLastRun": false,
+    "inputTokens": 7957,
+    "outputTokens": 138,
+    "totalTokens": 9493
+  },
+  "agent:main:openai:4b931e3c-1e24-4a28-b888-1cc3ff7b9140": {
+    "sessionId": "71875d32-1197-46b1-8263-e38d7b28b5bf",
+    "updatedAt": 1772088473807,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "openai-codex",
+    "model": "gpt-5.3-codex",
+    "contextTokens": 272000,
+    "abortedLastRun": false,
+    "inputTokens": 5713,
+    "outputTokens": 88,
+    "totalTokens": 9553
+  },
+  "agent:main:openai:0796d66c-d80d-4aa9-9231-8486e497814c": {
+    "sessionId": "b719db49-8569-4079-bf73-d42f1384d9b4",
+    "updatedAt": 1772088513237,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "openai-codex",
+    "model": "gpt-5.3-codex",
+    "contextTokens": 272000,
+    "abortedLastRun": false,
+    "inputTokens": 8060,
+    "outputTokens": 196,
+    "totalTokens": 9596
+  },
+  "agent:main:openai:88022735-fad1-4509-8dc8-d4aa27453505": {
+    "sessionId": "dff7a758-28b8-44b8-bfd9-def6a4141ede",
+    "updatedAt": 1772088779980,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "openai-codex",
+    "model": "gpt-5.3-codex",
+    "contextTokens": 272000,
+    "abortedLastRun": false,
+    "inputTokens": 8267,
+    "outputTokens": 130,
+    "totalTokens": 9803
+  },
+  "agent:main:openai:731982f1-cf3d-41e2-8dbc-236445ec01cf": {
+    "sessionId": "9c5bc04f-87a0-4895-b0f1-69d0e773c2e8",
+    "updatedAt": 1772088933713,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "openai-codex",
+    "model": "gpt-5.3-codex",
+    "contextTokens": 272000,
+    "abortedLastRun": false,
+    "inputTokens": 8437,
+    "outputTokens": 55,
+    "totalTokens": 9973
+  },
+  "agent:main:openai:40dc1df7-49b0-4822-8ba1-d0d1e88c4ce2": {
+    "sessionId": "9d07f32d-6c59-4ffe-93f9-327ffc650ee3",
+    "updatedAt": 1772090809187,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "openai-codex",
+    "model": "gpt-5.3-codex",
+    "contextTokens": 272000,
+    "abortedLastRun": false,
+    "inputTokens": 6448,
+    "outputTokens": 80,
+    "totalTokens": 10032
+  },
+  "agent:main:openai:4b61adff-94e5-434d-a344-5ce84076a1ab": {
+    "sessionId": "42d8b1a2-1fb0-479f-ab92-c0a384cd8d04",
+    "updatedAt": 1772090848732,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "openai-codex",
+    "model": "gpt-5.3-codex",
+    "contextTokens": 272000,
+    "abortedLastRun": false,
+    "inputTokens": 6558,
+    "outputTokens": 254,
+    "totalTokens": 10142
+  },
+  "agent:main:openai:89e376d9-70bc-4830-b649-72db1746e406": {
+    "sessionId": "a9ec817a-c1ce-4d4c-b394-43b1ccb6d98e",
+    "updatedAt": 1772090905285,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "openai-codex",
+    "model": "gpt-5.3-codex",
+    "contextTokens": 272000,
+    "abortedLastRun": false,
+    "inputTokens": 8799,
+    "outputTokens": 517,
+    "totalTokens": 10335
+  },
+  "agent:main:openai:5e8ca4fc-16e4-449d-b804-594518d7601a": {
+    "sessionId": "f5ce3e9f-5020-4591-9c31-c521c549fbc9",
+    "updatedAt": 1772092216951,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "openai-codex",
+    "model": "gpt-5.3-codex",
+    "contextTokens": 272000,
+    "abortedLastRun": false,
+    "inputTokens": 6256,
+    "outputTokens": 228,
+    "totalTokens": 10864
+  },
+  "agent:main:openai:0358f35b-3541-49ec-8c5a-3e8a0fdca0ab": {
+    "sessionId": "73eea7a7-4b1a-4d9c-8cf5-f70f76cdf760",
+    "updatedAt": 1772092593740,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "openai-codex",
+    "model": "gpt-5.3-codex",
+    "contextTokens": 272000,
+    "abortedLastRun": false,
+    "inputTokens": 144,
+    "outputTokens": 243,
+    "totalTokens": 12176
+  },
+  "agent:main:openai:62897c9e-9a0a-43b7-9d7c-d56950bc7529": {
+    "sessionId": "fd11b8ed-380b-4ec9-a4d3-c78fdb56d546",
+    "updatedAt": 1772092649507,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "openai-codex",
+    "model": "gpt-5.3-codex",
+    "contextTokens": 272000,
+    "abortedLastRun": false,
+    "inputTokens": 397,
+    "outputTokens": 162,
+    "totalTokens": 11149
+  },
+  "agent:main:openai:fb694d59-44f4-48c4-991a-564ac202e47f": {
+    "sessionId": "c14da67a-4245-42e5-a6c5-637098d33863",
+    "updatedAt": 1772093148254,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "openai-codex",
+    "model": "gpt-5.3-codex",
+    "contextTokens": 272000,
+    "abortedLastRun": false,
+    "inputTokens": 897,
+    "outputTokens": 68,
+    "totalTokens": 31233
+  },
+  "agent:main:openai:be27f428-1d8b-438d-92ba-dd7f9d7d3322": {
+    "sessionId": "b80c7d0b-501e-442e-b94c-da1f7bb2c360",
+    "updatedAt": 1772093182432,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "openai-codex",
+    "model": "gpt-5.3-codex",
+    "contextTokens": 272000,
+    "abortedLastRun": false,
+    "inputTokens": 212,
+    "outputTokens": 179,
+    "totalTokens": 9556
+  },
+  "agent:main:openai:b989c115-2e27-4516-9455-8174c20d90d7": {
+    "sessionId": "29a873c0-8767-4cdb-89dc-3201a300ca67",
+    "updatedAt": 1772093269356,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "openai-codex",
+    "model": "gpt-5.3-codex",
+    "contextTokens": 272000,
+    "abortedLastRun": false,
+    "inputTokens": 5050,
+    "outputTokens": 394,
+    "totalTokens": 9658
+  },
+  "agent:main:openai:d0dcfe8b-f97c-4fe4-ad06-c837a21896c3": {
+    "sessionId": "ebb11712-70ba-404f-8be2-ad6821cbe9ad",
+    "updatedAt": 1772093321054,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "openai-codex",
+    "model": "gpt-5.3-codex",
+    "contextTokens": 272000,
+    "abortedLastRun": false,
+    "inputTokens": 5939,
+    "outputTokens": 88,
+    "totalTokens": 9779
+  },
+  "agent:main:openai:37b4b334-5568-4ceb-83f9-b97c1edda488": {
+    "sessionId": "ebc49a1d-ea41-47ef-86e5-ec55a5d31c9e",
+    "updatedAt": 1772093468856,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "openai-codex",
+    "model": "gpt-5.3-codex",
+    "contextTokens": 272000,
+    "abortedLastRun": false,
+    "inputTokens": 8580,
+    "outputTokens": 396,
+    "totalTokens": 10116
+  },
+  "agent:main:openai:8a317acc-4784-4e3c-b310-90b1f6db39e0": {
+    "sessionId": "43f22168-d34f-4329-9498-4cc3c85f41f0",
+    "updatedAt": 1772096313044,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "openai-codex",
+    "model": "gpt-5.3-codex",
+    "contextTokens": 272000,
+    "abortedLastRun": false,
+    "inputTokens": 9860,
+    "outputTokens": 72,
+    "totalTokens": 9860
+  },
+  "agent:main:openai:f613c33e-f3e7-4eb4-b510-638729a77828": {
+    "sessionId": "f2c40aac-3975-447a-a189-9056c0d978ea",
+    "updatedAt": 1772096447452,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "openai-codex",
+    "model": "gpt-5.3-codex",
+    "contextTokens": 272000,
+    "abortedLastRun": false,
+    "inputTokens": 6713,
+    "outputTokens": 304,
+    "totalTokens": 10297
+  },
+  "agent:main:openai:5bd35da5-248c-4742-9659-4470e23e2162": {
+    "sessionId": "11aea710-5334-46a2-99dc-894b4b92dc89",
+    "updatedAt": 1772096908181,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "openai-codex",
+    "model": "gpt-5.3-codex",
+    "contextTokens": 272000,
+    "abortedLastRun": false,
+    "inputTokens": 5990,
+    "outputTokens": 47,
+    "totalTokens": 9574
+  },
+  "agent:main:openai:311a021c-49de-4fca-8840-9e9c1dc36046": {
+    "sessionId": "6132fdf7-538b-4457-b075-5b08e4b3311c",
+    "updatedAt": 1772096955568,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "openai-codex",
+    "model": "gpt-5.3-codex",
+    "contextTokens": 272000,
+    "abortedLastRun": false,
+    "inputTokens": 9043,
+    "outputTokens": 113,
+    "totalTokens": 19539
+  },
+  "agent:main:openai:01151189-7273-4092-833a-964b4f7fb576": {
+    "sessionId": "2c2d6e99-de3b-4156-b02b-41e3068d6964",
+    "updatedAt": 1772097038708,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "openai-codex",
+    "model": "gpt-5.3-codex",
+    "contextTokens": 272000,
+    "abortedLastRun": false,
+    "inputTokens": 8185,
+    "outputTokens": 272,
+    "totalTokens": 9721
+  },
+  "agent:main:openai:16032d29-8391-4551-847c-01ea31fc4296": {
+    "sessionId": "4cde365c-82d5-4385-ad34-b1ddd2e12ca5",
+    "updatedAt": 1772097530921,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "openai-codex",
+    "model": "gpt-5.3-codex",
+    "contextTokens": 272000,
+    "abortedLastRun": false,
+    "inputTokens": 8140,
+    "outputTokens": 79,
+    "totalTokens": 9676
+  },
+  "agent:main:openai:2717fcee-f60b-43c7-ac90-c567b6b9d6ff": {
+    "sessionId": "31051be8-2385-4142-8924-019202670cfe",
+    "updatedAt": 1772097576010,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "openai-codex",
+    "model": "gpt-5.3-codex",
+    "contextTokens": 272000,
+    "abortedLastRun": false,
+    "inputTokens": 8992,
+    "outputTokens": 129,
+    "totalTokens": 18720
+  },
+  "agent:main:openai:84c33245-d9c1-473e-81fc-1d23b373eda1": {
+    "sessionId": "6cf008ae-02da-46e8-9244-187e2322c99e",
+    "updatedAt": 1772097654515,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "openai-codex",
+    "model": "gpt-5.3-codex",
+    "contextTokens": 272000,
+    "abortedLastRun": false,
+    "inputTokens": 5393,
+    "outputTokens": 235,
+    "totalTokens": 10001
+  },
+  "agent:main:openai:830c41a1-6220-45fc-b4f3-850019c5226c": {
+    "sessionId": "c3dbbedc-dcb7-417c-9480-499e0ae8f267",
+    "updatedAt": 1772097874721,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "openai-codex",
+    "model": "gpt-5.3-codex",
+    "contextTokens": 272000,
+    "abortedLastRun": false,
+    "inputTokens": 8077,
+    "outputTokens": 252,
+    "totalTokens": 9613
+  },
+  "agent:main:openai:0ba60072-7cff-4c52-bb92-20d5763a3755": {
+    "sessionId": "1d0a1fc4-f75a-43c5-972c-ce2a1cccc686",
+    "updatedAt": 1772098522104,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "openai-codex",
+    "model": "gpt-5.3-codex",
+    "contextTokens": 272000,
+    "abortedLastRun": false,
+    "inputTokens": 239,
+    "outputTokens": 105,
+    "totalTokens": 9711
+  },
+  "agent:main:openai:475363c5-fe14-467f-bee5-adfc4029300b": {
+    "sessionId": "ec01ac2d-184d-4c7f-a5d9-4fac47119a9e",
+    "updatedAt": 1772098562583,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "openai-codex",
+    "model": "gpt-5.3-codex",
+    "contextTokens": 272000,
+    "abortedLastRun": false,
+    "inputTokens": 16209,
+    "outputTokens": 114,
+    "totalTokens": 18769
+  },
+  "agent:main:openai:dbae5139-8e37-4a10-b08b-3c6858e15a35": {
+    "sessionId": "790b9d88-0503-4366-a2bd-2ef3c2bec146",
+    "updatedAt": 1772098587536,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "openai-codex",
+    "model": "gpt-5.3-codex",
+    "contextTokens": 272000,
+    "abortedLastRun": false,
+    "inputTokens": 6300,
+    "outputTokens": 150,
+    "totalTokens": 9884
+  },
+  "agent:main:openai:a1fee3cd-570a-4750-b0f4-052b0a060619": {
+    "sessionId": "b7c6dbeb-a253-4523-b752-2eb79fbe470e",
+    "updatedAt": 1772098590763,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "openai-codex",
+    "model": "gpt-5.3-codex",
+    "contextTokens": 272000,
+    "abortedLastRun": false,
+    "inputTokens": 6295,
+    "outputTokens": 159,
+    "totalTokens": 9879
+  },
+  "agent:main:openai:4f9e8db2-e573-4a75-9344-8604cdb0376f": {
+    "sessionId": "39b242ab-f19f-4f47-9b50-632338b718f5",
+    "updatedAt": 1772098602983,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "openai-codex",
+    "model": "gpt-5.3-codex",
+    "contextTokens": 272000,
+    "abortedLastRun": false,
+    "inputTokens": 8997,
+    "outputTokens": 184,
+    "totalTokens": 18853
+  },
+  "agent:main:openai:22e92649-6faf-472c-bc2c-e0eff9d96ae4": {
+    "sessionId": "c7624756-8ef5-4d0c-aa98-c5d84dc0afbc",
+    "updatedAt": 1772098701715,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "openai-codex",
+    "model": "gpt-5.3-codex",
+    "contextTokens": 272000,
+    "abortedLastRun": false,
+    "inputTokens": 8533,
+    "outputTokens": 98,
+    "totalTokens": 10069
+  },
+  "agent:main:openai:86254158-77cd-4ecb-90ff-b636527ce642": {
+    "sessionId": "edb22224-663d-418b-bbf9-fc6928edabd6",
+    "updatedAt": 1772098721954,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "openai-codex",
+    "model": "gpt-5.3-codex",
+    "contextTokens": 272000,
+    "abortedLastRun": false,
+    "inputTokens": 412,
+    "outputTokens": 48,
+    "totalTokens": 10140
+  },
+  "agent:main:openai:8676afe3-bc84-4f24-98af-f771185c4b4f": {
+    "sessionId": "f38ad618-8a5c-437b-9d4b-e7f1d2da4f6e",
+    "updatedAt": 1772098738715,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "openai-codex",
+    "model": "gpt-5.3-codex",
+    "contextTokens": 272000,
+    "abortedLastRun": false,
+    "inputTokens": 476,
+    "outputTokens": 139,
+    "totalTokens": 10204
+  },
+  "agent:main:openai:be6f684c-b7ce-466d-8c96-56b14e7b4cfb": {
+    "sessionId": "8d4ae32f-ab62-45b7-99a3-e9d9ae13c24f",
+    "updatedAt": 1772098770721,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "openai-codex",
+    "model": "gpt-5.3-codex",
+    "contextTokens": 272000,
+    "abortedLastRun": false,
+    "inputTokens": 573,
+    "outputTokens": 51,
+    "totalTokens": 10301
+  },
+  "agent:main:openai:8467edf8-88ce-4478-ae70-11ba2eacf5d1": {
+    "sessionId": "3dab8805-9a29-4ca5-a97d-15123ca3a623",
+    "updatedAt": 1772101407821,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "openai-codex",
+    "model": "gpt-5.3-codex",
+    "contextTokens": 272000,
+    "abortedLastRun": false,
+    "inputTokens": 8174,
+    "outputTokens": 113,
+    "totalTokens": 9710
+  },
+  "agent:main:openai:f91585a5-7a10-47c7-a2bc-164eab45c3c4": {
+    "sessionId": "19adf781-872e-4bad-8c89-788660d9257e",
+    "updatedAt": 1772101421246,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "openai-codex",
+    "model": "gpt-5.3-codex",
+    "contextTokens": 272000,
+    "abortedLastRun": false,
+    "inputTokens": 6140,
+    "outputTokens": 110,
+    "totalTokens": 9724
+  },
+  "agent:main:openai:bd4fbc52-cf6d-4e5d-b38a-bb8bf13687c9": {
+    "sessionId": "d637b2dd-5ef2-4259-bcc4-4aab90522d65",
+    "updatedAt": 1772101501413,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "openai-codex",
+    "model": "gpt-5.3-codex",
+    "contextTokens": 272000,
+    "abortedLastRun": false,
+    "inputTokens": 8197,
+    "outputTokens": 145,
+    "totalTokens": 9733
+  },
+  "agent:main:openai:567eb156-844d-473f-956c-e6cb6a3c9cf5": {
+    "sessionId": "7636500c-0ca1-46de-9a0f-a24d333a28a4",
+    "updatedAt": 1772101533964,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "openai-codex",
+    "model": "gpt-5.3-codex",
+    "contextTokens": 272000,
+    "abortedLastRun": false,
+    "inputTokens": 6233,
+    "outputTokens": 248,
+    "totalTokens": 9817
+  },
+  "agent:main:openai:2e6bda4c-0ef8-4b45-9e2a-7703d861588f": {
+    "sessionId": "efeace79-9821-4a28-8b6c-c939c138f23e",
+    "updatedAt": 1772101559045,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "openai-codex",
+    "model": "gpt-5.3-codex",
+    "contextTokens": 272000,
+    "abortedLastRun": false,
+    "inputTokens": 6306,
+    "outputTokens": 75,
+    "totalTokens": 9890
+  },
+  "agent:main:cron:5ef2fb8a-7e82-4570-aac7-66bf7d321ddd": {
+    "sessionId": "be32d79e-bef5-45a5-96c1-3ebdf034f5c7",
+    "updatedAt": 1772436476933,
+    "systemSent": true,
+    "model": "gpt-5.3-codex",
+    "contextTokens": 272000,
+    "label": "Cron: Daily Builderz cache refresh",
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "openai-codex",
+    "inputTokens": 9012,
+    "outputTokens": 108,
+    "totalTokens": 18868
+  },
+  "agent:main:cron:5ef2fb8a-7e82-4570-aac7-66bf7d321ddd:run:be32d79e-bef5-45a5-96c1-3ebdf034f5c7": {
+    "sessionId": "be32d79e-bef5-45a5-96c1-3ebdf034f5c7",
+    "updatedAt": 1772436476933,
+    "systemSent": true,
+    "model": "gpt-5.3-codex",
+    "contextTokens": 272000,
+    "label": "Cron: Daily Builderz cache refresh",
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "skill-creator"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md",
+          "baseDir": "C:\\Users\\PC\\AppData\\Local\\nvm\\v22.12.0\\node_modules\\openclaw\\skills\\skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "openai-codex",
+    "inputTokens": 9012,
+    "outputTokens": 108,
+    "totalTokens": 18868
+  }
+}
